@@ -9,7 +9,7 @@ import {
     formatDuration,
     foldLine
 } from '../utils'
-import isEqual from 'lodash/isEqual'
+import isEqual from 'lodash.isequal'
 
 export default function formatEvent(attributes = {}) {
   const {
@@ -82,7 +82,7 @@ export default function formatEvent(attributes = {}) {
       icsFormat += foldLine(`ATTENDEE;${setContact(attendee)}`) + '\r\n'
     })
   }
-  
+
   if (alarms) {
     alarms.map(function (alarm) {
       icsFormat += setAlarm(alarm)

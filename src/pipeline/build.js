@@ -1,5 +1,5 @@
-import pickBy from "lodash/pickBy";
-import identity from "lodash/identity";
+import pickBy from "lodash.pickby";
+import identity from "lodash.identity";
 import defaultAttributes from "../defaults";
 
 export default function buildEvent(attributes = {}) {
